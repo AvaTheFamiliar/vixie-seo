@@ -1,7 +1,5 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
-  // Allow all 5 custom domains + Vercel preview URLs
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   async headers() {
     return [
       {
