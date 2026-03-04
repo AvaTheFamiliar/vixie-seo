@@ -21,6 +21,7 @@ export interface DomainConfig {
   accentHex: string
   heroHeadline: string
   heroSubheadline: string
+  layout: 'split' | 'centered' | 'gallery' | 'app' | 'editorial'
   ctaUrl: string
   ctaText: string
   stats: Array<{ value: string; label: string }>
@@ -28,13 +29,14 @@ export interface DomainConfig {
   subpages: SubPage[]
 }
 
-const CTA_URL = 'https://vixie-avas.vercel.app'
+const BASE_URL = 'https://vixie-avas.vercel.app'
 
 // ---------------------------------------------------------------------------
 // nudify.im
 // ---------------------------------------------------------------------------
 const nudifyIm: DomainConfig = {
   domain: 'nudify.im',
+  layout: 'split',
   brandName: 'Nudify.im',
   tagline: 'AI Nudifier — Instant, Private, Free',
   metaTitle: 'Nudify.im — AI Nudify Any Photo Online Free',
@@ -46,7 +48,7 @@ const nudifyIm: DomainConfig = {
   heroHeadline: 'Nudify Any Photo with AI',
   heroSubheadline:
     'Upload a photo and watch our AI remove clothing instantly. Photorealistic results in under 10 seconds. No sign-up required.',
-  ctaUrl: CTA_URL,
+  ctaUrl: `${BASE_URL}/?utm_source=nudify.im&utm_medium=landing`,
   ctaText: 'Nudify Now — It\'s Free',
   stats: [
     { value: '2M+', label: 'Photos nudified' },
@@ -266,6 +268,7 @@ const nudifyIm: DomainConfig = {
 // ---------------------------------------------------------------------------
 const nudifyMy: DomainConfig = {
   domain: 'nudify.my',
+  layout: 'centered',
   brandName: 'Nudify.my',
   tagline: 'Nudify My Photo — AI Clothes Removal',
   metaTitle: 'Nudify.my — Nudify My Photo with AI in Seconds',
@@ -277,7 +280,7 @@ const nudifyMy: DomainConfig = {
   heroHeadline: 'Nudify My Photo — Instantly',
   heroSubheadline:
     'Upload your photo and our AI removes clothing in seconds. Photorealistic results. Completely private. Free to try.',
-  ctaUrl: CTA_URL,
+  ctaUrl: `${BASE_URL}/?utm_source=nudify.my&utm_medium=landing`,
   ctaText: 'Nudify My Photo Free',
   stats: [
     { value: '2M+', label: 'Photos processed' },
@@ -500,6 +503,7 @@ const nudifyMy: DomainConfig = {
 // ---------------------------------------------------------------------------
 const nudifyPics: DomainConfig = {
   domain: 'nudify.pics',
+  layout: 'gallery',
   brandName: 'Nudify.pics',
   tagline: 'AI Nude Pics Generator — Instant & Free',
   metaTitle: 'Nudify.pics — AI Nude Pics Generator Online',
@@ -511,7 +515,7 @@ const nudifyPics: DomainConfig = {
   heroHeadline: 'Generate AI Nude Pics Instantly',
   heroSubheadline:
     'Upload any photo and get photorealistic AI nude pictures in seconds. 19 styles, private processing, free credits daily.',
-  ctaUrl: CTA_URL,
+  ctaUrl: `${BASE_URL}/?utm_source=nudify.pics&utm_medium=landing`,
   ctaText: 'Generate Nude Pics Free',
   stats: [
     { value: '2M+', label: 'Nude pics generated' },
@@ -730,6 +734,7 @@ const nudifyPics: DomainConfig = {
 // ---------------------------------------------------------------------------
 const nudieApp: DomainConfig = {
   domain: 'nudie.app',
+  layout: 'app',
   brandName: 'Nudie.app',
   tagline: 'The #1 Nude AI App — Fast, Realistic, Private',
   metaTitle: 'Nudie.app — AI Nude Generator App Online',
@@ -741,7 +746,7 @@ const nudieApp: DomainConfig = {
   heroHeadline: 'The AI Nude App That Actually Works',
   heroSubheadline:
     'Photorealistic AI nudification in under 10 seconds. 19 styles. Private by design. Try it free — no credit card needed.',
-  ctaUrl: CTA_URL,
+  ctaUrl: `${BASE_URL}/?utm_source=nudie.app&utm_medium=landing`,
   ctaText: 'Open the App Free',
   stats: [
     { value: '2M+', label: 'Users' },
@@ -968,6 +973,7 @@ const nudieApp: DomainConfig = {
 // ---------------------------------------------------------------------------
 const undressCat: DomainConfig = {
   domain: 'undress.cat',
+  layout: 'editorial',
   brandName: 'Undress.cat',
   tagline: 'AI Undress Tool — Remove Clothes with AI',
   metaTitle: 'Undress.cat — AI Undress Any Photo Online Free',
@@ -979,7 +985,7 @@ const undressCat: DomainConfig = {
   heroHeadline: 'Undress Any Photo with AI',
   heroSubheadline:
     'The most realistic undress AI online. Upload a photo, choose a style, and watch our AI remove clothing in under 10 seconds.',
-  ctaUrl: CTA_URL,
+  ctaUrl: `${BASE_URL}/?utm_source=undress.cat&utm_medium=landing`,
   ctaText: 'Undress a Photo Free',
   stats: [
     { value: '2M+', label: 'Photos undressed' },

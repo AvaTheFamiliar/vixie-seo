@@ -37,20 +37,17 @@ export default function Footer({ cfg }: { cfg: DomainConfig }) {
           <div>
             <p className="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Legal</p>
             <ul className="space-y-2">
-              <li><a href="https://vixie.art/public/privacy.html" className="text-sm text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener">Privacy Policy</a></li>
-              <li><a href="https://vixie.art/public/terms.html" className="text-sm text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener">Terms of Service</a></li>
-              <li><a href="https://vixie.art/public/dmca.html" className="text-sm text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener">DMCA</a></li>
+              <li><Link href="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
+              <li><Link href="/dmca" className="text-sm text-gray-400 hover:text-white transition-colors">DMCA</Link></li>
             </ul>
           </div>
         </div>
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} {cfg.brandName}. Adults 18+ only. All content is AI-generated.
-            Only use photos you have rights to. By using this service you agree to our{' '}
-            <a href="https://vixie.art/public/terms.html" className="underline" target="_blank" rel="noopener">Terms</a>.
-          </p>
-          <p className="text-xs text-gray-700">
-            Powered by <a href="https://vixie.art" className="text-gray-500 hover:text-white transition-colors" target="_blank" rel="noopener">Vixie.art</a>
+            Only upload photos you have rights to. By using this service you agree to our{' '}
+            <Link href="/terms" className="underline">Terms</Link>.
           </p>
         </div>
       </div>
