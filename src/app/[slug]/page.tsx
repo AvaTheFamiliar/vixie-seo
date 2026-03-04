@@ -7,6 +7,36 @@ import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
+import Image from 'next/image'
+// Maps slug keywords to SEO images (unique per topic)
+const SEO_IMAGE_MAP: Record<string, { src: string; alt: string }> = {
+  'how-it-works': { src: '/images/seo/ai-processing.png', alt: 'AI processing visualization showing neural network nodes for nudify AI' },
+  'privacy': { src: '/images/seo/privacy-shield.png', alt: 'Privacy shield concept for anonymous AI nudify processing' },
+  'privacy-safe': { src: '/images/seo/anonymous-private.png', alt: 'Anonymous private AI nudify processing — zero data retention' },
+  'private-nudify': { src: '/images/seo/anonymous-private.png', alt: 'Private AI nudify — your photos are never stored' },
+  'compare': { src: '/images/seo/comparison.png', alt: 'AI nudify tool comparison chart 2026' },
+  'best-nudify-tool-2026': { src: '/images/seo/comparison.png', alt: 'Best nudify AI tools comparison 2026' },
+  'best-undress-ai-2026': { src: '/images/seo/comparison.png', alt: 'Best undress AI tools comparison 2026' },
+  'examples': { src: '/images/seo/before-after-concept.png', alt: 'AI nudify before and after results comparison' },
+  'realistic-nudify': { src: '/images/seo/realistic-ai.png', alt: 'Realistic AI nudify results — true skin texture' },
+  'nudify-no-watermark': { src: '/images/seo/no-watermark.png', alt: 'AI nudify with no watermark — full quality output' },
+  'mobile-nudify': { src: '/images/seo/mobile-ai.png', alt: 'AI nudify on mobile — works in any browser' },
+  'nudify-iphone': { src: '/images/seo/mobile-ai.png', alt: 'Nudify AI on iPhone — no app install required' },
+  'nudify-android': { src: '/images/seo/mobile-ai.png', alt: 'Nudify AI on Android — browser-based tool' },
+  'nudify-for-free': { src: '/images/seo/free-tool.png', alt: 'Free AI nudify tool — no cost, no account' },
+  'free': { src: '/images/seo/free-tool.png', alt: 'Free nudify AI — zero cost results' },
+}
+
+function getSeoImage(slug: string): { src: string; alt: string } | null {
+  // Exact match
+  if (SEO_IMAGE_MAP[slug]) return SEO_IMAGE_MAP[slug]
+  // Partial match
+  for (const [key, val] of Object.entries(SEO_IMAGE_MAP)) {
+    if (slug.includes(key) || key.includes(slug.split('-')[0])) return val
+  }
+  return null
+}
+
 
 export function generateStaticParams() {
   const cfg = getDomainConfigFromEnv()
@@ -222,6 +252,19 @@ export default async function SubPage({ params }: Props) {
               </div>
             )}
 
+            {/* SEO topic image */}
+            {(() => { const seoImg = getSeoImage(slug); return seoImg ? (
+              <div className="mb-8 rounded-xl overflow-hidden">
+                <Image
+                  src={seoImg.src}
+                  alt={seoImg.alt}
+                  width={1200}
+                  height={675}
+                  className="w-full rounded-xl"
+                  loading="lazy"
+                />
+              </div>
+            ) : null; })()}
             <div className="space-y-6">
               {page.body.map((para, i) => (
                 <p key={i} className="text-gray-300 leading-relaxed text-base md:text-lg">
