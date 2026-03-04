@@ -1,13 +1,14 @@
-import { headers } from 'next/headers'
 import { getDomainConfig as _get, DEFAULT_DOMAIN, DOMAIN_CONFIGS } from '@/config/domains'
 import type { DomainConfig } from '@/config/domains'
 
-export async function getDomainConfigFromHeaders(): Promise<DomainConfig> {
-  const headersList = await headers()
-  // Read the native Host header directly — always reliable in both
-  // edge and Node runtimes. No middleware injection needed.
-  const host = (headersList.get('host') ?? DEFAULT_DOMAIN).split(':')[0]
-  return _get(host)
+/**
+ * Build-time domain resolution.
+ * Each Vercel project sets NEXT_PUBLIC_DOMAIN=nudify.im (etc.) as an env var.
+ * This is baked in at build time — no runtime header reads, fully static output.
+ */
+export function getDomainConfigFromEnv(): DomainConfig {
+  const domain = process.env.NEXT_PUBLIC_DOMAIN ?? DEFAULT_DOMAIN
+  return _get(domain)
 }
 
 export { getDomainConfig, getAllSubpageSlugs, DOMAIN_CONFIGS, DEFAULT_DOMAIN } from '@/config/domains'

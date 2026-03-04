@@ -1,13 +1,17 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
+import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 
-export const runtime = 'edge'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
+
+export function generateStaticParams() {
+  const cfg = getDomainConfigFromEnv()
+  return cfg.subpages.map((sp) => ({ slug: sp.slug }))
+}
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -15,7 +19,7 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const cfg = await getDomainConfigFromHeaders()
+  const cfg = getDomainConfigFromEnv()
   const page = cfg.subpages.find((sp) => sp.slug === slug)
   if (!page) return {}
   return {
@@ -34,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function SubPage({ params }: Props) {
   const { slug } = await params
-  const cfg = await getDomainConfigFromHeaders()
+  const cfg = getDomainConfigFromEnv()
   const page = cfg.subpages.find((sp) => sp.slug === slug)
   if (!page) notFound()
 

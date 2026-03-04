@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
-import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
+import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 
 // Run at Vercel's global edge network — renders in ~10ms worldwide,
 // no cold starts, no single-region Lambda latency.
-export const runtime = 'edge'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import LayoutSplit from '@/components/layouts/LayoutSplit'
@@ -12,8 +11,8 @@ import LayoutGallery from '@/components/layouts/LayoutGallery'
 import LayoutApp from '@/components/layouts/LayoutApp'
 import LayoutEditorial from '@/components/layouts/LayoutEditorial'
 
-export async function generateMetadata(): Promise<Metadata> {
-  const cfg = await getDomainConfigFromHeaders()
+export function generateMetadata(): Metadata {
+  const cfg = getDomainConfigFromEnv()
   return {
     title: cfg.metaTitle,
     description: cfg.metaDescription,
@@ -22,8 +21,8 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-export default async function HomePage() {
-  const cfg = await getDomainConfigFromHeaders()
+export default function HomePage() {
+  const cfg = getDomainConfigFromEnv()
 
   const schema = {
     '@context': 'https://schema.org',
