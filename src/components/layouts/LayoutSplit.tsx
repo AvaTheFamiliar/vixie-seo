@@ -142,8 +142,8 @@ export default function LayoutSplit({ cfg }: Props) {
             <div className="col-span-1 mt-12">
               <div className="text-[10px] uppercase tracking-widest text-gray-600 mb-2 font-medium">Example 02</div>
               <BeforeAfterSlider
-                beforeSrc="/images/after-5.webp"
-                afterSrc="/images/before-5.webp"
+                beforeSrc="/images/before-5.webp"
+                afterSrc="/images/after-5.webp"
                 aspectRatio="2/3"
               />
               {/* Trust pill below second slider */}
@@ -196,8 +196,8 @@ export default function LayoutSplit({ cfg }: Props) {
           <div>
             <div className="text-[10px] uppercase tracking-widest text-gray-600 mb-2">Example 03</div>
             <BeforeAfterSlider
-              beforeSrc="/images/before-1.webp"
-              afterSrc="/images/after-1.webp"
+              beforeSrc="/images/before-2.webp"
+              afterSrc="/images/after-2.webp"
               aspectRatio="2/3"
             />
           </div>
