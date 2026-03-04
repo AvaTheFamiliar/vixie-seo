@@ -40,7 +40,7 @@ export default function LayoutCentered({ cfg }: { cfg: DomainConfig }) {
       <section className="px-6 pb-16">
         <div className="max-w-2xl mx-auto">
           {HAS_IMAGES
-            ? <BeforeAfterSlider beforeSrc="/images/before-2.webp" afterSrc="/images/after-2.webp" height={500} className="shadow-2xl rounded-2xl" />
+            ? <BeforeAfterSlider beforeSrc="/images/before-2.webp" afterSrc="/images/after-2.webp" aspectRatio="2/3" className="shadow-2xl rounded-2xl" />
             : <div className="rounded-2xl overflow-hidden grid grid-cols-2 gap-1 shadow-2xl">
                 <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
                 <ImagePlaceholder label="AFTER (AI)" aspectRatio="3/4" className="rounded-none" />
@@ -97,10 +97,10 @@ export default function LayoutCentered({ cfg }: { cfg: DomainConfig }) {
           <h2 className="text-3xl font-black text-center mb-4">Before &amp; After</h2>
           <p className="text-gray-500 text-center mb-10 text-sm">Real AI results · Drag sliders to compare</p>
           {/* One wide centred slider + two compact below */}
-          <BeforeAfterSlider beforeSrc="/images/before-4.webp" afterSrc="/images/after-4.webp" height={520} className="mb-4 max-w-2xl mx-auto" />
+          <BeforeAfterSlider beforeSrc="/images/before-4.webp" afterSrc="/images/after-4.webp" aspectRatio="2/3" className="mb-4 max-w-2xl mx-auto" />
           <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
             {[5,6].map(n => (
-              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={280} />
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} aspectRatio="2/3" />
             ))}
           </div>
         </div>

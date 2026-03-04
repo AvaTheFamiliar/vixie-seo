@@ -54,7 +54,7 @@ export default function LayoutSplit({ cfg }: Props) {
           {/* Right — slider */}
           <div className="relative">
             {HAS_IMAGES
-              ? <BeforeAfterSlider beforeSrc="/images/before-3.webp" afterSrc="/images/after-3.webp" height={560} className="shadow-2xl" />
+              ? <BeforeAfterSlider beforeSrc="/images/before-3.webp" afterSrc="/images/after-3.webp" aspectRatio="2/3" className="shadow-2xl" />
               : <div className="rounded-2xl overflow-hidden grid grid-cols-2 gap-1 shadow-2xl">
                   <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
                   <ImagePlaceholder label="AFTER (AI)" aspectRatio="3/4" className="rounded-none" />
@@ -106,11 +106,11 @@ export default function LayoutSplit({ cfg }: Props) {
           <h2 className="text-3xl font-black mb-4 text-center">Real Results</h2>
           <p className="text-gray-500 text-center mb-12">Drag the sliders to compare before and after</p>
           {/* Featured large slider */}
-          <BeforeAfterSlider beforeSrc="/images/before-5.webp" afterSrc="/images/after-5.webp" height={500} className="mb-4" />
+          <BeforeAfterSlider beforeSrc="/images/before-5.webp" afterSrc="/images/after-5.webp" aspectRatio="2/3" className="mb-4" />
           {/* Two smaller below */}
           <div className="grid md:grid-cols-2 gap-4">
             {[4,6].map(n => (
-              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={300} />
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} aspectRatio="2/3" />
             ))}
           </div>
         </div>

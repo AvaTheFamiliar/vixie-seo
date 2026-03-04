@@ -9,6 +9,7 @@ interface Props {
   beforeAlt?: string
   afterAlt?: string
   height?: number
+  aspectRatio?: string
   className?: string
 }
 
@@ -17,7 +18,8 @@ export default function BeforeAfterSlider({
   afterSrc,
   beforeAlt = 'Before',
   afterAlt = 'After (AI)',
-  height = 480,
+  height,
+  aspectRatio,
   className = '',
 }: Props) {
   const [pos, setPos] = useState(50)
@@ -61,7 +63,7 @@ export default function BeforeAfterSlider({
     <div
       ref={containerRef}
       className={`ba-slider rounded-xl overflow-hidden select-none ${className}`}
-      style={{ height, position: 'relative', cursor: 'col-resize' }}
+      style={aspectRatio ? { aspectRatio, position: 'relative', cursor: 'col-resize' } : { height: height ?? 480, position: 'relative', cursor: 'col-resize' }}
       onMouseDown={onMouseDown}
       onTouchStart={onTouchStart}
     >

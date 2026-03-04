@@ -52,7 +52,7 @@ export default function LayoutEditorial({ cfg }: { cfg: DomainConfig }) {
         <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>
             {HAS_IMAGES
-              ? <BeforeAfterSlider beforeSrc="/images/before-4.webp" afterSrc="/images/after-4.webp" height={520} className="rounded-2xl shadow-2xl" />
+              ? <BeforeAfterSlider beforeSrc="/images/before-4.webp" afterSrc="/images/after-4.webp" aspectRatio="2/3" className="rounded-2xl shadow-2xl" />
               : <div className="rounded-2xl overflow-hidden grid grid-cols-2 gap-1 shadow-2xl">
                   <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
                   <ImagePlaceholder label="AFTER (AI)" aspectRatio="3/4" className="rounded-none" />
@@ -103,7 +103,7 @@ export default function LayoutEditorial({ cfg }: { cfg: DomainConfig }) {
           {/* 2 large side-by-side */}
           <div className="grid md:grid-cols-2 gap-6">
             {[5,6].map(n => (
-              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={460} />
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} aspectRatio="2/3" />
             ))}
           </div>
         </div>

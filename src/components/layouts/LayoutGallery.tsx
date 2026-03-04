@@ -43,13 +43,13 @@ export default function LayoutGallery({ cfg }: { cfg: DomainConfig }) {
           {/* 2-col hero row */}
           <div className="grid grid-cols-2 gap-3 mb-3">
             {[3,5].map(n => (
-              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={400} />
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} aspectRatio="2/3" />
             ))}
           </div>
           {/* 4-col strip below */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[1,2,4,6].map(n => (
-              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={220} />
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} aspectRatio="2/3" />
             ))}
           </div>
           <div className="text-center mt-10">

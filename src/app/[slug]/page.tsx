@@ -90,11 +90,11 @@ export default async function SubPage({ params }: Props) {
         <section className="py-10 px-4">
           <div className="max-w-5xl mx-auto">
             {/* Featured large slider */}
-            <BeforeAfterSlider beforeSrc="/images/before-1.webp" afterSrc="/images/after-1.webp" height={480} className="mb-4" />
+            <BeforeAfterSlider beforeSrc="/images/before-1.webp" afterSrc="/images/after-1.webp" aspectRatio="2/3" className="mb-4" />
             {/* Two smaller below */}
             <div className="grid grid-cols-2 gap-4">
-              <BeforeAfterSlider beforeSrc="/images/before-2.webp" afterSrc="/images/after-2.webp" height={280} />
-              <BeforeAfterSlider beforeSrc="/images/before-3.webp" afterSrc="/images/after-3.webp" height={280} />
+              <BeforeAfterSlider beforeSrc="/images/before-2.webp" afterSrc="/images/after-2.webp" aspectRatio="2/3" />
+              <BeforeAfterSlider beforeSrc="/images/before-3.webp" afterSrc="/images/after-3.webp" aspectRatio="2/3" />
             </div>
           </div>
         </section>
