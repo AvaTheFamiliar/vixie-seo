@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
+
+export const runtime = 'edge'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'

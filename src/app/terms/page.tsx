@@ -2,6 +2,7 @@ import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
+export const runtime = 'edge'
 export const metadata = { title: 'Terms of Service' }
 
 export default async function TermsPage() {

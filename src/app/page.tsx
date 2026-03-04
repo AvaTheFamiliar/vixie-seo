@@ -1,5 +1,9 @@
 import type { Metadata } from 'next'
 import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
+
+// Run at Vercel's global edge network — renders in ~10ms worldwide,
+// no cold starts, no single-region Lambda latency.
+export const runtime = 'edge'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import LayoutSplit from '@/components/layouts/LayoutSplit'

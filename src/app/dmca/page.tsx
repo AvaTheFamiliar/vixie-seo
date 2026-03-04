@@ -2,6 +2,7 @@ import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
+export const runtime = 'edge'
 export const metadata = { title: 'DMCA Policy' }
 
 export default async function DmcaPage() {
