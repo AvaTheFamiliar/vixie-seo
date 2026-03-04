@@ -1,12 +1,12 @@
-import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
+import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const runtime = 'edge'
 export const metadata = { title: 'Terms of Service' }
 
-export default async function TermsPage() {
-  const cfg = await getDomainConfigFromHeaders()
+export default function TermsPage() {
+  const cfg = getDomainConfigFromEnv()
   return (
     <>
       <Nav cfg={cfg} />

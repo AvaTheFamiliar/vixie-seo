@@ -1,12 +1,12 @@
-import { getDomainConfigFromHeaders } from '@/lib/getDomainConfig'
+import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 export const runtime = 'edge'
 export const metadata = { title: 'Privacy Policy' }
 
-export default async function PrivacyPage() {
-  const cfg = await getDomainConfigFromHeaders()
+export default function PrivacyPage() {
+  const cfg = getDomainConfigFromEnv()
   return (
     <>
       <Nav cfg={cfg} />
