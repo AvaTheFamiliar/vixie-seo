@@ -60,7 +60,7 @@ export default function LayoutApp({ cfg }: { cfg: DomainConfig }) {
         <div className="max-w-xl mx-auto">
           <p className="text-center text-sm text-gray-600 mb-4">Real AI result · Drag to compare</p>
           {HAS_IMAGES
-            ? <BeforeAfterSlider beforeSrc="/images/before-1.webp" afterSrc="/images/after-1.webp" height={480} className="rounded-2xl shadow-2xl" />
+            ? <BeforeAfterSlider beforeSrc="/images/before-6.webp" afterSrc="/images/after-6.webp" height={480} className="rounded-2xl shadow-2xl" />
             : <div className="rounded-2xl overflow-hidden grid grid-cols-2 gap-1 shadow-2xl">
                 <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
                 <ImagePlaceholder label="AFTER (AI)" aspectRatio="3/4" className="rounded-none" />
@@ -94,7 +94,7 @@ export default function LayoutApp({ cfg }: { cfg: DomainConfig }) {
           <p className="text-gray-500 text-sm text-center mb-10">Slide to reveal the AI-generated result</p>
           {/* 2×2 square grid */}
           <div className="grid grid-cols-2 gap-4">
-            {[1,2,3,4].map(n => (
+            {[2,3,4,5].map(n => (
               <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={320} />
             ))}
           </div>

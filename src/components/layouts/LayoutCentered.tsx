@@ -40,7 +40,7 @@ export default function LayoutCentered({ cfg }: { cfg: DomainConfig }) {
       <section className="px-6 pb-16">
         <div className="max-w-2xl mx-auto">
           {HAS_IMAGES
-            ? <BeforeAfterSlider beforeSrc="/images/before-1.webp" afterSrc="/images/after-1.webp" height={500} className="shadow-2xl rounded-2xl" />
+            ? <BeforeAfterSlider beforeSrc="/images/before-2.webp" afterSrc="/images/after-2.webp" height={500} className="shadow-2xl rounded-2xl" />
             : <div className="rounded-2xl overflow-hidden grid grid-cols-2 gap-1 shadow-2xl">
                 <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
                 <ImagePlaceholder label="AFTER (AI)" aspectRatio="3/4" className="rounded-none" />
