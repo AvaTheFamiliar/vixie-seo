@@ -6,9 +6,14 @@ export function middleware(request: NextRequest) {
   // Strip port for local dev
   const domain = host.split(':')[0]
 
-  const response = NextResponse.next()
-  response.headers.set('x-domain', domain)
-  return response
+  // Must clone and set on the REQUEST headers so that
+  // server components can read it via headers() — not response headers
+  const requestHeaders = new Headers(request.headers)
+  requestHeaders.set('x-domain', domain)
+
+  return NextResponse.next({
+    request: { headers: requestHeaders },
+  })
 }
 
 export const config = {
