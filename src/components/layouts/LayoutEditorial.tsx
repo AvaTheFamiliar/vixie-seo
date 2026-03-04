@@ -100,14 +100,11 @@ export default function LayoutEditorial({ cfg }: { cfg: DomainConfig }) {
             <h2 className="text-3xl font-black">Results</h2>
             <p className="text-sm text-gray-600">Drag sliders to compare</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-3">
-            {[1,2,3].map(n => HAS_IMAGES
-              ? <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={400} />
-              : <div key={n} className="rounded-xl overflow-hidden grid grid-cols-2 gap-1">
-                  <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
-                  <ImagePlaceholder label="AFTER" aspectRatio="3/4" className="rounded-none" />
-                </div>
-            )}
+          {/* 2 large side-by-side */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {[5,6].map(n => (
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={460} />
+            ))}
           </div>
         </div>
       </section>

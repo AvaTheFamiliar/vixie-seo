@@ -92,14 +92,11 @@ export default function LayoutApp({ cfg }: { cfg: DomainConfig }) {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-black text-center mb-4">See it in action</h2>
           <p className="text-gray-500 text-sm text-center mb-10">Slide to reveal the AI-generated result</p>
-          <div className="grid md:grid-cols-3 gap-4">
-            {[1,2,3].map(n => HAS_IMAGES
-              ? <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={360} />
-              : <div key={n} className="rounded-xl overflow-hidden grid grid-cols-2 gap-1">
-                  <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
-                  <ImagePlaceholder label="AFTER" aspectRatio="3/4" className="rounded-none" />
-                </div>
-            )}
+          {/* 2×2 square grid */}
+          <div className="grid grid-cols-2 gap-4">
+            {[1,2,3,4].map(n => (
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={320} />
+            ))}
           </div>
         </div>
       </section>

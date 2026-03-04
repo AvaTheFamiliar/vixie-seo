@@ -105,14 +105,13 @@ export default function LayoutSplit({ cfg }: Props) {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-black mb-4 text-center">Real Results</h2>
           <p className="text-gray-500 text-center mb-12">Drag the sliders to compare before and after</p>
-          <div className="grid md:grid-cols-3 gap-4">
-            {[1,2,3].map(n => HAS_IMAGES
-              ? <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={380} />
-              : <div key={n} className="rounded-xl overflow-hidden grid grid-cols-2 gap-1">
-                  <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
-                  <ImagePlaceholder label="AFTER" aspectRatio="3/4" className="rounded-none" />
-                </div>
-            )}
+          {/* Featured large slider */}
+          <BeforeAfterSlider beforeSrc="/images/before-1.webp" afterSrc="/images/after-1.webp" height={500} className="mb-4" />
+          {/* Two smaller below */}
+          <div className="grid md:grid-cols-2 gap-4">
+            {[2,3].map(n => (
+              <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={300} />
+            ))}
           </div>
         </div>
       </section>
