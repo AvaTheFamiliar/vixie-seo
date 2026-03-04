@@ -8,7 +8,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 
-const HAS_IMAGES = false
+const HAS_IMAGES = true
 
 export default function LayoutEditorial({ cfg }: { cfg: DomainConfig }) {
   const faqs = cfg.subpages.find(sp => sp.slug === 'faq')?.faqs.slice(0, 6) ?? []
@@ -52,7 +52,7 @@ export default function LayoutEditorial({ cfg }: { cfg: DomainConfig }) {
         <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_auto] gap-8 items-center">
           <div>
             {HAS_IMAGES
-              ? <BeforeAfterSlider beforeSrc="/images/before-1.jpg" afterSrc="/images/after-1.jpg" height={520} className="rounded-2xl shadow-2xl" />
+              ? <BeforeAfterSlider beforeSrc="/images/before-1.webp" afterSrc="/images/after-1.webp" height={520} className="rounded-2xl shadow-2xl" />
               : <div className="rounded-2xl overflow-hidden grid grid-cols-2 gap-1 shadow-2xl">
                   <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
                   <ImagePlaceholder label="AFTER (AI)" aspectRatio="3/4" className="rounded-none" />
@@ -102,7 +102,7 @@ export default function LayoutEditorial({ cfg }: { cfg: DomainConfig }) {
           </div>
           <div className="grid md:grid-cols-3 gap-3">
             {[1,2,3].map(n => HAS_IMAGES
-              ? <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.jpg`} afterSrc={`/images/after-${n}.jpg`} height={400} />
+              ? <BeforeAfterSlider key={n} beforeSrc={`/images/before-${n}.webp`} afterSrc={`/images/after-${n}.webp`} height={400} />
               : <div key={n} className="rounded-xl overflow-hidden grid grid-cols-2 gap-1">
                   <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
                   <ImagePlaceholder label="AFTER" aspectRatio="3/4" className="rounded-none" />
