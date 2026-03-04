@@ -1,21 +1,13 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
+// Domain detection is now handled by reading the native `host` header
+// directly in server components — no middleware injection needed.
+// Keeping middleware minimal to avoid any header-forwarding edge cases.
 export function middleware(request: NextRequest) {
-  const host = request.headers.get('host') || ''
-  // Strip port for local dev
-  const domain = host.split(':')[0]
-
-  // Must clone and set on the REQUEST headers so that
-  // server components can read it via headers() — not response headers
-  const requestHeaders = new Headers(request.headers)
-  requestHeaders.set('x-domain', domain)
-
-  return NextResponse.next({
-    request: { headers: requestHeaders },
-  })
+  return NextResponse.next()
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon|images).*)', '/'],
+  matcher: ['/((?!_next/static|_next/image|favicon|images).*)'],
 }

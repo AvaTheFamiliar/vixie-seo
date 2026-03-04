@@ -4,7 +4,7 @@ import { getDomainConfig } from '@/config/domains'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const headersList = await headers()
-  const domain = (headersList.get('x-domain') ?? 'nudify.im').split(':')[0]
+  const domain = (headersList.get('host') ?? 'nudify.im').split(':')[0]
   const cfg = getDomainConfig(domain)
   const base = `https://${domain}`
 

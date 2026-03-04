@@ -3,7 +3,7 @@ import { headers } from 'next/headers'
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const headersList = await headers()
-  const domain = (headersList.get('x-domain') ?? 'nudify.im').split(':')[0]
+  const domain = (headersList.get('host') ?? 'nudify.im').split(':')[0]
   return {
     rules: { userAgent: '*', allow: '/' },
     sitemap: `https://${domain}/sitemap.xml`,
