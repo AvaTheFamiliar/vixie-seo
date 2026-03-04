@@ -2,8 +2,15 @@ import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-export const runtime = 'edge'
-export const metadata = { title: 'DMCA Policy' }
+export function generateMetadata() {
+  const cfg = getDomainConfigFromEnv()
+  return {
+    title: 'DMCA Policy — ' + cfg.brandName,
+    description: 'Read the DMCA Policy for ' + cfg.brandName + '. Understand your rights and our data practices.',
+    alternates: { canonical: 'https://' + cfg.domain + '/dmca' },
+    robots: { index: false, follow: false },
+  }
+}
 
 export default function DmcaPage() {
   const cfg = getDomainConfigFromEnv()

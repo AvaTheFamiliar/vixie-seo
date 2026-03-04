@@ -2,8 +2,15 @@ import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-export const runtime = 'edge'
-export const metadata = { title: 'Terms of Service' }
+export function generateMetadata() {
+  const cfg = getDomainConfigFromEnv()
+  return {
+    title: 'Terms of Service — ' + cfg.brandName,
+    description: 'Read the Terms of Service for ' + cfg.brandName + '. Understand your rights and our data practices.',
+    alternates: { canonical: 'https://' + cfg.domain + '/terms' },
+    robots: { index: false, follow: false },
+  }
+}
 
 export default function TermsPage() {
   const cfg = getDomainConfigFromEnv()

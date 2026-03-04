@@ -2,8 +2,15 @@ import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
-export const runtime = 'edge'
-export const metadata = { title: 'Privacy Policy' }
+export function generateMetadata() {
+  const cfg = getDomainConfigFromEnv()
+  return {
+    title: 'Privacy Policy — ' + cfg.brandName,
+    description: 'Read the Privacy Policy for ' + cfg.brandName + '. Understand your rights and our data practices.',
+    alternates: { canonical: 'https://' + cfg.domain + '/privacy' },
+    robots: { index: false, follow: false },
+  }
+}
 
 export default function PrivacyPage() {
   const cfg = getDomainConfigFromEnv()
