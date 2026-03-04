@@ -7,7 +7,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import CTAButton from '@/components/CTAButton'
 import FAQAccordion from '@/components/FAQAccordion'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
+import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -39,7 +39,7 @@ export default async function SubPage({ params }: Props) {
   if (!page) notFound()
 
   const isExamples = slug === 'examples'
-  const hasImages = false // flip to true when images are dropped into /public/images/
+  const hasImages = true
 
   return (
     <>
@@ -84,24 +84,13 @@ export default async function SubPage({ params }: Props) {
       {/* ── EXAMPLES GALLERY (only on /examples) ────────────── */}
       {isExamples && (
         <section className="py-10 px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
-              {[1, 2, 3].map((n) => (
-                <div key={n}>
-                  {hasImages ? (
-                    <div className="rounded-xl overflow-hidden">
-                      {/* Replace with BeforeAfterSlider once images exist */}
-                      <ImagePlaceholder label={`Example ${n}`} aspectRatio="3/4" />
-                    </div>
-                  ) : (
-                    <div className="rounded-xl overflow-hidden grid grid-cols-2 gap-1">
-                      <ImagePlaceholder label="BEFORE" aspectRatio="3/4" className="rounded-none" />
-                      <ImagePlaceholder label="AFTER" aspectRatio="3/4" className="rounded-none" />
-                    </div>
-                  )}
-                  <p className="text-center text-xs text-gray-600 mt-2">Example {n}</p>
-                </div>
-              ))}
+          <div className="max-w-5xl mx-auto">
+            {/* Featured large slider */}
+            <BeforeAfterSlider beforeSrc="/images/before-1.webp" afterSrc="/images/after-1.webp" height={480} className="mb-4" />
+            {/* Two smaller below */}
+            <div className="grid grid-cols-2 gap-4">
+              <BeforeAfterSlider beforeSrc="/images/before-2.webp" afterSrc="/images/after-2.webp" height={280} />
+              <BeforeAfterSlider beforeSrc="/images/before-3.webp" afterSrc="/images/after-3.webp" height={280} />
             </div>
           </div>
         </section>
@@ -120,17 +109,17 @@ export default async function SubPage({ params }: Props) {
         </section>
       )}
 
-      {/* ── INLINE PLACEHOLDER IMAGE ─────────────────────────── */}
+      {/* ── INLINE BEFORE/AFTER ─────────────────────────────── */}
       {!isExamples && (
         <section className="py-6 px-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="grid grid-cols-2 gap-4">
-              <ImagePlaceholder label="Before photo" aspectRatio="3/4" />
-              <ImagePlaceholder label="After (AI result)" aspectRatio="3/4" />
-            </div>
-            <p className="text-center text-xs text-gray-600 mt-3">
-              Before &amp; after example — replace with real images
-            </p>
+          <div className="max-w-2xl mx-auto">
+            <BeforeAfterSlider
+              beforeSrc="/images/before-4.webp"
+              afterSrc="/images/after-4.webp"
+              height={420}
+              className="rounded-2xl"
+            />
+            <p className="text-center text-xs text-gray-600 mt-3">Before &amp; after — AI result</p>
           </div>
         </section>
       )}
