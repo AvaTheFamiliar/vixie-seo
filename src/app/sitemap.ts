@@ -1,12 +1,9 @@
 import type { MetadataRoute } from 'next'
-import { headers } from 'next/headers'
-import { getDomainConfig } from '@/config/domains'
+import { getDomainConfigFromEnv } from '@/lib/getDomainConfig'
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const headersList = await headers()
-  const domain = (headersList.get('host') ?? 'nudify.im').split(':')[0]
-  const cfg = getDomainConfig(domain)
-  const base = `https://${domain}`
+export default function sitemap(): MetadataRoute.Sitemap {
+  const cfg = getDomainConfigFromEnv()
+  const base = `https://${cfg.domain}`
 
   return [
     { url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },

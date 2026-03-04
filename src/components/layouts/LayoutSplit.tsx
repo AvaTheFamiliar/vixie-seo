@@ -38,7 +38,7 @@ export default function LayoutSplit({ cfg }: Props) {
     <div className="bg-[#05040d] text-white overflow-x-hidden" style={{ fontFamily: "'DM Sans', sans-serif" }}>
 
       {/* ── HERO ─────────────────────────────────────────────────────── */}
-      <section className="min-h-screen grid lg:grid-cols-[54%_46%]">
+      <section className="min-h-screen max-w-[1600px] mx-auto grid lg:grid-cols-[54%_46%]">
 
         {/* Left — copy */}
         <div className="relative flex flex-col justify-center px-8 md:px-14 lg:px-20 py-28 overflow-hidden">
@@ -138,7 +138,7 @@ export default function LayoutSplit({ cfg }: Props) {
       </section>
 
       {/* ── VALUE PROPS ─────────────────────────────────────────────── */}
-      <section className="py-14 px-8 md:px-16 border-t border-white/5">
+      <section className="py-14 px-8 md:px-16 border-t border-white/5 max-w-[1600px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {VALUE_PROPS.map(({ Icon, text }) => (
             <div
@@ -157,7 +157,7 @@ export default function LayoutSplit({ cfg }: Props) {
       </section>
 
       {/* ── GALLERY ─────────────────────────────────────────────────── */}
-      <section id="examples" className="py-24 px-8 md:px-16">
+      <section id="examples" className="py-24 px-8 md:px-16 max-w-[1600px] mx-auto">
         <div className="flex items-end justify-between mb-10">
           <div>
             <p className="text-[10px] uppercase tracking-widest mb-2" style={{ color: cfg.accentHex }}>
@@ -205,7 +205,7 @@ export default function LayoutSplit({ cfg }: Props) {
       </section>
 
       {/* ── FINAL CTA ───────────────────────────────────────────────── */}
-      <section className="py-24 px-8 md:px-16 border-t border-white/5 relative overflow-hidden">
+      <section className="py-24 px-8 md:px-16 border-t border-white/5 relative overflow-hidden max-w-[1600px] mx-auto">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: `radial-gradient(ellipse 70% 90% at 0% 60%, ${cfg.primaryHex}10, transparent)` }}
@@ -260,7 +260,7 @@ export default function LayoutSplit({ cfg }: Props) {
 
       {/* ── FAQ ─────────────────────────────────────────────────────── */}
       {faqs.length > 0 && (
-        <section className="py-20 px-8 md:px-16 border-t border-white/5">
+        <section className="py-20 px-8 md:px-16 border-t border-white/5 max-w-[1600px] mx-auto">
           <div className="flex items-center gap-4 mb-10">
             <span className="w-6 h-px opacity-40" style={{ background: cfg.accentHex }} />
             <h2 className="text-2xl font-black">FAQ</h2>
@@ -272,7 +272,7 @@ export default function LayoutSplit({ cfg }: Props) {
       )}
 
       {/* Bottom CTA strip */}
-      <section className="py-6 px-8 md:px-16 border-t border-white/5">
+      <section className="py-6 px-8 md:px-16 border-t border-white/5 max-w-[1600px] mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-600">{cfg.brandName} — {cfg.tagline}</p>
           <a
