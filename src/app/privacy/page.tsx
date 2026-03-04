@@ -27,7 +27,7 @@ export default async function PrivacyPage() {
           <li>We never share your data with advertisers</li>
         </ul>
         <h2 className="text-white font-bold mt-8 mb-3">Contact</h2>
-        <p className="text-sm">Privacy enquiries: <a href="mailto:privacy@vixie.art" className="underline">privacy@vixie.art</a></p>
+        
       </main>
       <Footer cfg={cfg} />
     </>

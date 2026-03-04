@@ -25,7 +25,7 @@ export default async function TermsPage() {
         <h2 className="text-white font-bold mt-8 mb-3">Enforcement</h2>
         <p className="text-sm">Violations result in immediate permanent account termination. We cooperate with law enforcement where required.</p>
         <h2 className="text-white font-bold mt-8 mb-3">Contact</h2>
-        <p className="text-sm">Questions: <a href="mailto:hello@vixie.art" className="underline">hello@vixie.art</a></p>
+        
       </main>
       <Footer cfg={cfg} />
     </>

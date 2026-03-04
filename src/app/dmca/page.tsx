@@ -14,7 +14,7 @@ export default async function DmcaPage() {
         <h1 className="text-3xl font-black text-white mb-2">DMCA Policy</h1>
         <p className="text-gray-500 mb-8 text-sm">Last updated: March 2026</p>
         <p className="mb-4">We respect intellectual property rights. To report copyright infringement, send a DMCA notice to:</p>
-        <p className="mb-8 font-bold text-white"><a href="mailto:dmca@vixie.art" className="underline">dmca@vixie.art</a></p>
+        <p className="mb-8 text-gray-400">Send DMCA notices via the contact form on the main site.</p>
         <h2 className="text-white font-bold mt-8 mb-3">Your Notice Must Include</h2>
         <ul className="list-disc pl-5 space-y-2 text-sm">
           <li>Identification of the copyrighted work claimed to have been infringed</li>

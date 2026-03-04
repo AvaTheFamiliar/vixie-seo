@@ -186,7 +186,7 @@ const nudifyIm: DomainConfig = {
       title: 'Frequently Asked Questions — Nudify.im',
       metaDescription: 'All your questions about Nudify.im answered. How it works, pricing, privacy, safety and more.',
       h1: 'Nudify.im — Frequently Asked Questions',
-      intro: 'Everything you need to know about Nudify.im. Can\'t find your answer? Email us at hello@vixie.art.',
+      intro: 'Everything you need to know about Nudify.im. Can\'t find your answer? ',
       body: [],
       faqs: [
         { q: 'What is Nudify.im?', a: 'Nudify.im is an AI-powered tool that removes clothing from photos to produce realistic nude images. It uses cutting-edge generative AI models running on dedicated GPU servers.' },
@@ -218,7 +218,7 @@ const nudifyIm: DomainConfig = {
         { q: 'Do you train AI on my photos?', a: 'No. Your photos are never used for AI training or model improvement.' },
         { q: 'How long are my photos stored?', a: 'Input photos: deleted within 24 hours. Output results: stored in your private gallery until you delete them.' },
         { q: 'Is my payment information safe?', a: 'We never store card details. All payments go through PCI-DSS compliant processors (Stripe/Chargebee).' },
-        { q: 'Can I delete my account and all data?', a: 'Yes — email privacy@vixie.art and we will delete all your data within 48 hours.' },
+        { q: 'Can I delete my account and all data?', a: 'Yes — contact support and we will delete all your data within 48 hours.' },
       ],
     },
     {
@@ -399,7 +399,7 @@ const nudifyMy: DomainConfig = {
       title: 'FAQ — Nudify My Photo Questions Answered | Nudify.my',
       metaDescription: 'FAQ for Nudify.my. How it works, privacy, pricing, and more answered.',
       h1: 'Nudify.my FAQ',
-      intro: 'Common questions about Nudify.my answered. Still have questions? Email hello@vixie.art.',
+      intro: 'Common questions about Nudify.my answered. Still have questions? ',
       body: [],
       faqs: [
         { q: 'What is Nudify.my?', a: 'Nudify.my is an AI tool that removes clothing from photos to create realistic nude images. It\'s designed to be fast, private, and easy to use.' },
@@ -411,7 +411,7 @@ const nudifyMy: DomainConfig = {
         { q: 'Is there a Chrome extension?', a: 'Yes — available in the Chrome Web Store.' },
         { q: 'Can I use this on my phone?', a: 'Yes — the web app works on all mobile browsers.' },
         { q: 'Do credits expire?', a: 'Free daily credits reset daily. Paid credits never expire.' },
-        { q: 'How do I delete my data?', a: 'Email privacy@vixie.art and we\'ll delete everything within 48 hours.' },
+        { q: 'How do I delete my data?', a: 'Contact support to delete everything within 48 hours.' },
       ],
     },
     {
@@ -430,7 +430,7 @@ const nudifyMy: DomainConfig = {
         { q: 'Who can see my nudified photo?', a: 'Only you — photos are private by default.' },
         { q: 'Do you use my photo for AI training?', a: 'No. Never.' },
         { q: 'Is payment information secure?', a: 'We never store card details. Payments go through PCI-DSS compliant processors.' },
-        { q: 'Can I delete my account?', a: 'Yes — email privacy@vixie.art.' },
+        { q: 'Can I delete my account?', a: 'Yes — contact support.' },
         { q: 'Do you comply with GDPR?', a: 'Yes — you have the right to access, correct, and delete your personal data at any time.' },
       ],
     },
@@ -664,7 +664,7 @@ const nudifyPics: DomainConfig = {
         { q: 'What styles are available?', a: '19 styles across casual, swimwear, lingerie, nude, and NSFW.' },
         { q: 'Do credits expire?', a: 'Free credits reset daily. Paid credits never expire.' },
         { q: 'Is there a Chrome extension?', a: 'Yes — nudify from any website with one right-click.' },
-        { q: 'How do I delete my data?', a: 'Email privacy@vixie.art.' },
+        { q: 'How do I delete my data?', a: 'Contact support.' },
       ],
     },
     {
@@ -684,7 +684,7 @@ const nudifyPics: DomainConfig = {
         { q: 'Do you use my photos for AI training?', a: 'Never.' },
         { q: 'What happens to my original photo?', a: 'Auto-deleted within 24 hours.' },
         { q: 'Is payment secure?', a: 'Yes — we use PCI-DSS compliant processors and never store card details.' },
-        { q: 'Can I delete my account?', a: 'Yes — email privacy@vixie.art.' },
+        { q: 'Can I delete my account?', a: 'Yes — contact support.' },
       ],
     },
     {
@@ -881,7 +881,7 @@ const nudieApp: DomainConfig = {
         { q: 'Can I pay with crypto?', a: 'Yes — Bitcoin, ETH, USDT and more.' },
         { q: 'Do credits expire?', a: 'Free daily: yes (resets midnight). Paid: never.' },
         { q: 'What\'s the minimum age?', a: '18+. We actively enforce this.' },
-        { q: 'How do I contact support?', a: 'Email hello@vixie.art.' },
+        { q: 'How do I contact support?', a: '' },
       ],
     },
     {
@@ -901,7 +901,7 @@ const nudieApp: DomainConfig = {
         { q: 'Can anyone see my results?', a: 'No — private by default. Share is opt-in.' },
         { q: 'Do you sell my data?', a: 'Never.' },
         { q: 'Do you train AI on my photos?', a: 'Never.' },
-        { q: 'Can I delete my account?', a: 'Yes — email privacy@vixie.art.' },
+        { q: 'Can I delete my account?', a: 'Yes — contact support.' },
         { q: 'Is payment info stored?', a: 'No — never. PCI-DSS compliant processors handle all payments.' },
       ],
     },
@@ -1154,7 +1154,7 @@ const undressCat: DomainConfig = {
         { q: 'Do you train AI on my photos?', a: 'Never.' },
         { q: 'How long is my original stored?', a: '24 hours maximum, then permanently deleted.' },
         { q: 'Is payment secure?', a: 'PCI-DSS compliant processors. We never store card details.' },
-        { q: 'Can I request data deletion?', a: 'Yes — email privacy@vixie.art.' },
+        { q: 'Can I request data deletion?', a: 'Yes — contact support.' },
       ],
     },
     {
@@ -1174,7 +1174,7 @@ const undressCat: DomainConfig = {
         { q: 'How do you prevent misuse?', a: 'Automated detection of minors, public figures, and non-consensual content. User reports reviewed by our moderation team.' },
         { q: 'What happens if I violate the terms?', a: 'Immediate permanent account ban and, where required, reporting to authorities.' },
         { q: 'Is consent required?', a: 'Yes — always, for photos of real identifiable people.' },
-        { q: 'Can I report misuse?', a: 'Yes — email dmca@vixie.art or report from within the app.' },
+        { q: 'Can I report misuse?', a: 'Yes — report from within the app.' },
       ],
     },
     {
