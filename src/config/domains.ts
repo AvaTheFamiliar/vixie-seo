@@ -58,10 +58,10 @@ const nudifyIm: DomainConfig = {
   ],
   features: [
     { icon: '⚡', title: 'Instant Results', desc: 'AI processes your photo in under 10 seconds on dedicated GPU servers.' },
-    { icon: '🔒', title: 'Private & Secure', desc: 'Your uploads are encrypted and automatically deleted within 24 hours.' },
+    { icon: '🔒', title: 'Private & Secure', desc: 'Your uploads are encrypted end-to-end. Private and secure by design.' },
     { icon: '🎨', title: '19 Nude Styles', desc: 'From tasteful to explicit — choose exactly the look you want.' },
-    { icon: '🆓', title: 'Free Daily Credits', desc: 'Get 5 free nudifications every day. No credit card needed.' },
-    { icon: '📱', title: 'Works Everywhere', desc: 'Nudify photos from any device — phone, tablet, or desktop.' },
+    { icon: '🆓', title: 'Free Daily Credits', desc: 'Get 5 free nudifications every day. Start instantly, upgrade when you want.' },
+    { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is discreet — your privacy extends to checkout.' },
     { icon: '✨', title: 'Photorealistic AI', desc: 'Cutting-edge AI models trained on millions of images for lifelike results.' },
   ],
   subpages: [
@@ -491,10 +491,10 @@ const nudifyMy: DomainConfig = {
   features: [
     { icon: '📸', title: 'Any Photo', desc: 'Works on selfies, portraits, full-body shots, and everything in between.' },
     { icon: '⚡', title: 'Instant Processing', desc: 'AI results in under 10 seconds on dedicated GPU hardware.' },
-    { icon: '🔒', title: '100% Private', desc: 'Your photo is automatically deleted within 24 hours. No exceptions.' },
+    { icon: '🔒', title: 'Private & Secure', desc: 'End-to-end encrypted. Private and secure — your photos are yours alone.' },
     { icon: '🎨', title: 'Choose Your Style', desc: '19 styles — from subtle to explicit. You\'re in control.' },
-    { icon: '💎', title: 'Free Daily Credits', desc: '5 free nudifications per day, no credit card needed.' },
-    { icon: '🔄', title: 'Free Retries', desc: 'Not happy? Retry once for free within 1 hour.' },
+    { icon: '💎', title: 'Free Daily Credits', desc: '5 free nudifications every day. Start now, upgrade when you\'re ready.' },
+    { icon: '💳', title: 'Discrete Payments', desc: 'Card or crypto accepted. Discreet billing — nothing explicit on your statement.' },
   ],
   subpages: [
     {
@@ -926,10 +926,10 @@ const nudifyPics: DomainConfig = {
   features: [
     { icon: '🖼️', title: 'Photorealistic Pics', desc: 'AI-generated nude pics indistinguishable from real photography.' },
     { icon: '⚡', title: '10-Second Results', desc: 'No waiting. Results in under 10 seconds on our A100 GPU cluster.' },
-    { icon: '🔐', title: 'Encrypted & Private', desc: 'All uploads encrypted. Input photos deleted within 24 hours.' },
+    { icon: '🔐', title: 'Private & Secure', desc: 'All uploads encrypted end-to-end. Private and secure from upload to result.' },
     { icon: '🎭', title: '19 Styles', desc: 'From tasteful nude to explicit NSFW — choose your level.' },
-    { icon: '📦', title: 'Batch Processing', desc: 'Generate nude pics from up to 10 photos at once (paid plans).' },
-    { icon: '💎', title: '5 Free Daily', desc: 'Free nude pic generation every day. No card needed.' },
+    { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is generic — your purchase stays private.' },
+    { icon: '💎', title: 'Free Daily Credits', desc: '5 free nude pic generations every day. Start immediately.' },
   ],
   subpages: [
     {
@@ -1357,10 +1357,10 @@ const nudieApp: DomainConfig = {
   features: [
     { icon: '📱', title: 'Works on Any Device', desc: 'Full web app on mobile, tablet, and desktop. Chrome extension available.' },
     { icon: '🤖', title: 'Advanced AI', desc: 'Cutting-edge AI models running on A100 GPUs for truly photorealistic results.' },
-    { icon: '🔒', title: 'Private by Design', desc: 'Input photos deleted in 24h. End-to-end encryption. Zero data selling.' },
+    { icon: '🔒', title: 'Private & Secure', desc: 'End-to-end encryption. Zero data selling. Private and secure by design.' },
     { icon: '🎨', title: '19 Nude Styles', desc: 'From lingerie to full nude to NSFW — choose the exact look you want.' },
-    { icon: '💎', title: 'Credits, Not Subscriptions', desc: 'Buy once, use forever. Credits never expire. No monthly fees.' },
-    { icon: '⚡', title: 'Blazing Fast', desc: 'Sub-10-second processing on our dedicated multi-GPU cluster.' },
+    { icon: '💎', title: 'Free Daily Credits', desc: '5 free nude generations every day. Start now, buy more when you need them.' },
+    { icon: '💳', title: 'Discrete Payments', desc: 'Card or crypto accepted. Discreet billing — nothing explicit on your statement.' },
   ],
   subpages: [
     {
@@ -1796,10 +1796,10 @@ const undressCat: DomainConfig = {
   features: [
     { icon: '👗', title: 'AI Clothes Removal', desc: 'Advanced AI that realistically removes any type of clothing from any photo.' },
     { icon: '⚡', title: 'Instant Results', desc: 'Results in under 10 seconds on dedicated A100 GPU servers.' },
-    { icon: '🔐', title: 'Private & Secure', desc: 'Input photos deleted within 24 hours. Zero third-party sharing.' },
+    { icon: '🔐', title: 'Private & Secure', desc: 'End-to-end encrypted. Private and secure — zero third-party sharing.' },
     { icon: '🎨', title: '19 Undress Styles', desc: 'From tasteful to explicit — full control over the output.' },
-    { icon: '🆓', title: '5 Free Daily', desc: 'Undress 5 photos every day for free. No sign-up.' },
-    { icon: '📱', title: 'All Devices', desc: 'Works on phone, tablet, and desktop. Chrome extension available.' },
+    { icon: '🆓', title: 'Free Daily Credits', desc: '5 free undresses every day. Start immediately, upgrade when you want.' },
+    { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is discreet — your purchase stays private.' },
   ],
   subpages: [
     {
