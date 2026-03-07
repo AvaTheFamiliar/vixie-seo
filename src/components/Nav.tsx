@@ -1,16 +1,29 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { DomainConfig } from '@/config/domains'
 
 const NAV_SLUGS = ['how-it-works', 'examples', 'compare', 'faq']
 
 export default function Nav({ cfg }: { cfg: DomainConfig }) {
   const navPages = cfg.subpages.filter((sp) => NAV_SLUGS.includes(sp.slug)).slice(0, 4)
+  const isUndressCat = cfg.domain === 'undress.cat'
 
   return (
     <nav className="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-white/10" style={{ fontFamily: "'DM Sans', sans-serif" }}>
       <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-6">
-        <Link href="/" className="text-lg font-extrabold tracking-tight text-white flex-shrink-0">
-          {cfg.brandName}
+        <Link href="/" className="flex items-center gap-2 flex-shrink-0 group">
+          {isUndressCat && (
+            <Image
+              src="/cat-logo.svg"
+              alt=""
+              width={28}
+              height={28}
+              className="group-hover:scale-110 transition-transform"
+            />
+          )}
+          <span className="text-lg font-extrabold tracking-tight text-white">
+            {cfg.brandName}
+          </span>
         </Link>
 
         {/* Desktop nav links */}
