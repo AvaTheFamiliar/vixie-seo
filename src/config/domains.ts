@@ -929,7 +929,7 @@ const nudifyPics: DomainConfig = {
     { icon: '🔐', title: 'Private & Secure', desc: 'All uploads encrypted end-to-end. Private and secure from upload to result.' },
     { icon: '🎭', title: '19 Styles', desc: 'From tasteful nude to explicit NSFW — choose your level.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is generic — your purchase stays private.' },
-    { icon: '💎', title: 'Free Daily Credits', desc: `10 free nude pic generations every day. Start immediately.' },
+    { icon: '💎', title: 'Free Daily Credits', desc: '10 free nude pic generations every day. Start immediately.' },
   ],
   subpages: [
     {
@@ -945,7 +945,7 @@ const nudifyPics: DomainConfig = {
       ],
       faqs: [
         { q: 'How realistic are the AI nude pics?', a: 'Very realistic. Our model produces accurate skin texture, lighting, and body proportions.' },
-        { q: 'Is it free to generate nude AI pics?', a: `10 free generations per day, no account required.' },
+        { q: 'Is it free to generate nude AI pics?', a: '10 free generations per day, no account required.' },
         { q: 'Can I generate nude pics of myself?', a: 'Yes — selfies and personal photos work great. Always ensure you have rights to the photos you upload.' },
         { q: 'Are there different styles?', a: '19 styles from tasteful nude to explicit NSFW.' },
         { q: 'Are my pics private?', a: 'Yes — your gallery is private and input photos are auto-deleted within 24 hours.' },
@@ -1006,7 +1006,7 @@ const nudifyPics: DomainConfig = {
         { q: 'Can I match this quality?', a: 'Yes — with a similar quality input photo.' },
         { q: 'What styles are shown?', a: 'Nude, Lingerie, Bikini, and NSFW explicit styles.' },
         { q: 'How do I get results this good?', a: 'Use a clear, well-lit, high-resolution image with a forward-facing subject.' },
-        { q: 'Is it free?', a: `10 free nude pics per day, no account required.' },
+        { q: 'Is it free?', a: '10 free nude pics per day, no account required.' },
       ],
     },
     {
@@ -1056,7 +1056,7 @@ const nudifyPics: DomainConfig = {
       body: [],
       faqs: [
         { q: 'What is Nudify.pics?', a: 'An AI tool that generates realistic nude photos from any uploaded image.' },
-        { q: 'Is it free?', a: `10 free generations per day. No account or credit card needed.' },
+        { q: 'Is it free?', a: '10 free generations per day. No account or credit card needed.' },
         { q: 'What formats are supported?', a: 'JPG, PNG, WebP up to 10MB.' },
         { q: 'Are my pics private?', a: 'Yes — input deleted in 24h, output gallery is private to you.' },
         { q: 'Can I batch-generate?', a: 'Yes — up to 10 photos per request on paid plans.' },
@@ -1101,7 +1101,7 @@ const nudifyPics: DomainConfig = {
       ],
       faqs: [
         { q: 'Is Nudify.pics the best quality?', a: 'Our A100-powered models produce industry-leading realism. Try the free plan and compare.' },
-        { q: 'Is it the cheapest?', a: `10 free/day and $4.99/60 credits makes it one of the best-value options available.' },
+        { q: 'Is it the cheapest?', a: '10 free/day and $4.99/60 credits makes it one of the best-value options available.' },
         { q: 'Is it the fastest?', a: 'Sub-10-second average is faster than most competitors.' },
         { q: 'How does privacy compare?', a: '24-hour auto-delete and no data selling is a higher standard than most alternatives.' },
         { q: 'Can I try it free?', a: '10 free daily nude pic generations, no account needed.' },
@@ -1142,7 +1142,7 @@ const nudifyPics: DomainConfig = {
       faqs: [
         { q: 'How does the AI nude pics generator work?', a: 'The AI analyzes the input photo to identify clothing regions, body shape, skin tone, and lighting, then synthesizes realistic nude skin to replace the clothing. Results appear in 2–4 seconds.' },
         { q: 'How realistic are the generated nude pics?', a: 'Approximately 85–92% realistic on standard photos. Our A100 GPU models produce natural skin texture, accurate lighting, and realistic body proportions.' },
-        { q: 'Is the nude pics generator free?', a: `10 free generations per day, no account required. Paid packs from $4.99 for 60 credits.' },
+        { q: 'Is the nude pics generator free?', a: '10 free generations per day, no account required. Paid packs from $4.99 for 60 credits.' },
         { q: 'Are generated nude pics private?', a: 'Yes — uploaded photos are deleted within 30–60 seconds. Results are private to your gallery.' },
       ],
     },
@@ -1222,8 +1222,8 @@ const nudifyPics: DomainConfig = {
       faqs: [
         { q: 'What is the best AI nude photo tool in 2026?', a: 'Nudify.pics ranks #1 for the combination of A100 GPU realism (85–92%), 2–4 second speed, 30-second photo deletion, and 10 free daily credits with no account.' },
         { q: 'How does Nudify.pics compare on quality?', a: 'Modern diffusion models on A100 GPUs produce significantly more realistic results than competitors using older GAN architectures or consumer-grade hardware.' },
-        { q: 'Is Nudify.pics the cheapest option?', a: `10 free/day plus $4.99/60 credits (never expire) is among the most competitive pricing in the market.' },
-        { q: 'Can I try it before comparing?', a: `10 free AI nude generations per day, no account or credit card required.' },
+        { q: 'Is Nudify.pics the cheapest option?', a: '10 free/day plus $4.99/60 credits (never expire) is among the most competitive pricing in the market.' },
+        { q: 'Can I try it before comparing?', a: '10 free AI nude generations per day, no account or credit card required.' },
       ],
     },
     {
@@ -1359,7 +1359,7 @@ const nudieApp: DomainConfig = {
     { icon: '🤖', title: 'Advanced AI', desc: 'Cutting-edge AI models running on A100 GPUs for truly photorealistic results.' },
     { icon: '🔒', title: 'Private & Secure', desc: 'End-to-end encryption. Zero data selling. Private and secure by design.' },
     { icon: '🎨', title: '19 Nude Styles', desc: 'From lingerie to full nude to NSFW — choose the exact look you want.' },
-    { icon: '💎', title: 'Free Daily Credits', desc: `10 free nude generations every day. Start now, buy more when you need them.' },
+    { icon: '💎', title: 'Free Daily Credits', desc: '10 free nude generations every day. Start now, buy more when you need them.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Card or crypto accepted. Discreet billing — nothing explicit on your statement.' },
   ],
   subpages: [
@@ -1378,7 +1378,7 @@ const nudieApp: DomainConfig = {
       faqs: [
         { q: 'Is Nudie.app a real app or web app?', a: 'A progressive web app — works on every device via browser. Plus a Chrome extension for desktop.' },
         { q: 'How good is the AI?', a: 'We use cutting-edge generative AI on A100 GPUs. Results are photorealistic and highly accurate.' },
-        { q: 'Is it free?', a: `10 free nude generations per day. No card, no account needed.' },
+        { q: 'Is it free?', a: '10 free nude generations per day. No card, no account needed.' },
         { q: 'Is it safe and private?', a: 'Yes — encrypted uploads, 24-hour auto-delete, no data selling.' },
         { q: 'What makes it the best nude AI app?', a: 'The combination of realism (A100 GPU models), speed (<10s), privacy (24h delete), and price (free tier + affordable credits).' },
       ],
@@ -1442,7 +1442,7 @@ const nudieApp: DomainConfig = {
         { q: 'Can I get results this good?', a: 'Yes — with a similar quality input photo.' },
         { q: 'What styles are shown?', a: 'Nude, Lingerie, Bikini, and NSFW explicit.' },
         { q: 'How do I get the best results?', a: 'Use clear, well-lit, high-resolution photos with a forward-facing subject.' },
-        { q: 'Is it really free?', a: `10 free AI nude generations per day, no card needed.' },
+        { q: 'Is it really free?', a: '10 free AI nude generations per day, no card needed.' },
       ],
     },
     {
@@ -1559,10 +1559,10 @@ const nudieApp: DomainConfig = {
       ],
       faqs: [
         { q: 'Is Nudie.app the best quality nude AI app?', a: 'Our A100-powered models deliver industry-leading realism. Try free and compare.' },
-        { q: 'Is it the cheapest?', a: `10 free/day and $4.99/60 credits — among the best-value options.' },
+        { q: 'Is it the cheapest?', a: '10 free/day and $4.99/60 credits — among the best-value options.' },
         { q: 'Is it the fastest?', a: 'Sub-10-second average is faster than most alternatives.' },
         { q: 'What about privacy vs competitors?', a: '24h auto-delete and no data selling is a higher standard than most.' },
-        { q: 'Can I try before committing?', a: `10 free nude AI generations per day — no card, no account.' },
+        { q: 'Can I try before committing?', a: '10 free nude AI generations per day — no card, no account.' },
       ],
     },
     {
@@ -1622,7 +1622,7 @@ const nudieApp: DomainConfig = {
         { q: 'Is there an AI undress app for iPhone?', a: 'Yes — Nudie.app works in Safari on any iPhone. No App Store download needed. Full feature access including 10 free daily credits.' },
         { q: 'Is there an AI undress app for Android?', a: 'Yes — Nudie.app works in Chrome on any Android device. Same features as iOS, no Google Play needed.' },
         { q: 'How fast are results on the mobile AI undress app?', a: '2–4 seconds — same as desktop. Processing is server-side, so phone hardware does not affect speed.' },
-        { q: 'Is the mobile AI undress app free?', a: `10 free undress results per day, no account or credit card required.' },
+        { q: 'Is the mobile AI undress app free?', a: '10 free undress results per day, no account or credit card required.' },
       ],
     },
     {
@@ -1798,7 +1798,7 @@ const undressCat: DomainConfig = {
     { icon: '⚡', title: 'Instant Results', desc: 'Results in under 10 seconds on dedicated A100 GPU servers.' },
     { icon: '🔐', title: 'Private & Secure', desc: 'End-to-end encrypted. Private and secure — zero third-party sharing.' },
     { icon: '🎨', title: '19 Undress Styles', desc: 'From tasteful to explicit — full control over the output.' },
-    { icon: '🆓', title: 'Free Daily Credits', desc: `10 free undresses every day. Start immediately, upgrade when you want.' },
+    { icon: '🆓', title: 'Free Daily Credits', desc: '10 free undresses every day. Start immediately, upgrade when you want.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is discreet — your purchase stays private.' },
   ],
   subpages: [
@@ -1812,7 +1812,7 @@ const undressCat: DomainConfig = {
         'Undress AI technology has advanced rapidly. Undress.cat uses state-of-the-art generative AI running on NVIDIA A100 GPUs to produce results that are genuinely photorealistic.',
         'Our AI understands body structure, skin tone, lighting direction, and scene context — it doesn\'t just fill in pixels, it synthesizes a complete nude interpretation that looks natural within the original photo.',
         'Privacy is built in: input photos are deleted within 24 hours, results are private by default, and we never use your photos for AI training.',
-        `10 free undress AI results per day — no account, no credit card required.',
+        '10 free undress AI results per day — no account, no credit card required.',
       ],
       faqs: [
         { q: 'How does undress AI work?', a: 'The AI identifies clothing regions in the photo, analyzes body shape, skin tone, and lighting, then synthesizes realistic nude skin to replace the clothing.' },
@@ -1837,7 +1837,7 @@ const undressCat: DomainConfig = {
         { q: 'Does the undresser work on all body types?', a: 'Yes — our model handles diverse body shapes, skin tones, and features with equal quality.' },
         { q: 'Can I undress multiple photos at once?', a: 'Yes — batch processing up to 10 photos is available on paid plans.' },
         { q: 'What clothing types can be removed?', a: 'All types — casual clothing, dresses, swimwear, lingerie, jackets, etc.' },
-        { q: 'Is there a free plan?', a: `10 free undress results per day, no account needed.' },
+        { q: 'Is there a free plan?', a: '10 free undress results per day, no account needed.' },
         { q: 'How is the output quality?', a: 'Photorealistic with accurate skin, lighting, and body proportions.' },
       ],
     },
@@ -1876,7 +1876,7 @@ const undressCat: DomainConfig = {
         { q: 'Can I get results this good?', a: 'With a similar quality input, yes.' },
         { q: 'What styles are shown?', a: 'Nude, Lingerie, Bikini, and NSFW explicit.' },
         { q: 'How do I get the best results?', a: 'Use a clear, well-lit, high-resolution forward-facing photo.' },
-        { q: 'Is it free?', a: `10 free undress results daily.' },
+        { q: 'Is it free?', a: '10 free undress results daily.' },
       ],
     },
     {
@@ -1888,14 +1888,14 @@ const undressCat: DomainConfig = {
       body: [
         'Our online AI undresser runs entirely in the cloud. You don\'t need a powerful computer — all the AI processing happens on our server-side GPU infrastructure.',
         'Works on every device: iPhone, Android, tablet, laptop, desktop. Any modern browser supported.',
-        `10 free online undress results per day. No credit card, no registration.',
+        '10 free online undress results per day. No credit card, no registration.',
       ],
       faqs: [
         { q: 'Does online undressing require software?', a: 'No — everything runs in your browser.' },
         { q: 'Does it work on mobile?', a: 'Yes — fully optimised for mobile browsers.' },
         { q: 'Is there latency with online processing?', a: 'Under 10 seconds on our GPU cluster — faster than most local solutions.' },
         { q: 'Does it work on slow internet?', a: 'Yes — only the image upload and result download use bandwidth. Processing is server-side.' },
-        { q: 'Is it free online?', a: `10 free undress results per day, no account needed.' },
+        { q: 'Is it free online?', a: '10 free undress results per day, no account needed.' },
       ],
     },
     {
@@ -1926,7 +1926,7 @@ const undressCat: DomainConfig = {
       body: [],
       faqs: [
         { q: 'What is Undress.cat?', a: 'An AI tool that removes clothing from photos to produce realistic nude images.' },
-        { q: 'Is it free?', a: `10 free undress results per day, no account required.' },
+        { q: 'Is it free?', a: '10 free undress results per day, no account required.' },
         { q: 'How realistic are the results?', a: 'Very — photorealistic with accurate skin, lighting, and proportions.' },
         { q: 'Is my photo private?', a: 'Yes — input deleted in 24h, gallery private to you.' },
         { q: 'What formats work?', a: 'JPG, PNG, WebP up to 10MB.' },
@@ -1991,10 +1991,10 @@ const undressCat: DomainConfig = {
       ],
       faqs: [
         { q: 'Is Undress.cat the best quality?', a: 'Our A100 models deliver industry-leading realism. Try free and compare.' },
-        { q: 'Is it cheaper than undress.app alternatives?', a: `10 free/day and $4.99/60 makes it highly competitive.' },
+        { q: 'Is it cheaper than undress.app alternatives?', a: '10 free/day and $4.99/60 makes it highly competitive.' },
         { q: 'Is it faster?', a: 'Sub-10 seconds is faster than most competitors.' },
         { q: 'Better privacy than competitors?', a: '24h auto-delete and no data selling exceeds most alternatives.' },
-        { q: 'Free trial available?', a: `10 free undress results per day, no account.' },
+        { q: 'Free trial available?', a: '10 free undress results per day, no account.' },
       ],
     },
     {
@@ -2033,8 +2033,8 @@ const undressCat: DomainConfig = {
       faqs: [
         { q: 'What is the best undress AI tool in 2026?', a: 'Undress.cat ranks #1 for the combination of A100 GPU realism (85–92%), 2–4 second speed, 30-second photo deletion, and 10 free daily credits with no account.' },
         { q: 'How does Undress.cat compare on quality?', a: 'Modern diffusion models on A100 GPUs produce significantly more realistic results than competitors using older architectures or consumer hardware.' },
-        { q: 'Is Undress.cat the cheapest option?', a: `10 free/day plus $4.99/60 credits (never expire) is among the most competitive pricing available.' },
-        { q: 'Can I try it before comparing?', a: `10 free undress AI results per day, no account or credit card required.' },
+        { q: 'Is Undress.cat the cheapest option?', a: '10 free/day plus $4.99/60 credits (never expire) is among the most competitive pricing available.' },
+        { q: 'Can I try it before comparing?', a: '10 free undress AI results per day, no account or credit card required.' },
       ],
     },
     {
