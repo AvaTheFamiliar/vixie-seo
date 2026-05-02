@@ -5,6 +5,7 @@
  */
 import type { DomainConfig } from '@/config/domains'
 import CTAButton from '@/components/CTAButton'
+import TelegramButton from '@/components/TelegramButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import { Upload, Zap, CreditCard, RefreshCw, Lock, Eye, Activity, CheckCircle, ArrowUpRight, Send } from 'lucide-react'
@@ -72,7 +73,10 @@ export default function LayoutApp({ cfg }: Props) {
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
+              <div className="flex flex-wrap items-center gap-3">
               <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />
+                <TelegramButton size="lg" />
+              </div>
               <a
                 href="#demo"
                 className="px-5 py-3.5 rounded-xl border border-white/10 text-sm text-gray-400 hover:text-white hover:border-white/20 transition font-medium flex items-center gap-1.5"
@@ -187,7 +191,10 @@ export default function LayoutApp({ cfg }: Props) {
           </div>
 
           <div className="text-center mt-8">
+            <div className="flex flex-wrap items-center gap-3">
             <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />
+              <TelegramButton size="lg" />
+            </div>
             <p className="text-xs text-gray-600 mt-3 font-mono">
               free · no account · auto-deleted
             </p>
@@ -227,7 +234,10 @@ export default function LayoutApp({ cfg }: Props) {
             </p>
           </div>
           <div className="flex flex-col items-start md:items-end gap-2">
+            <div className="flex flex-wrap items-center gap-3">
             <CTAButton href={cfg.ctaUrl} label="Try Free" hex={cfg.primaryHex} size="lg" />
+              <TelegramButton size="lg" />
+            </div>
             <p className="text-[10px] text-gray-600 font-mono">no account required</p>
           </div>
         </div>

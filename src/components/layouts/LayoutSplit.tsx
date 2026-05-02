@@ -11,6 +11,7 @@
 import { useState, useEffect } from 'react'
 import type { DomainConfig } from '@/config/domains'
 import CTAButton from '@/components/CTAButton'
+import TelegramButton from '@/components/TelegramButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import { Check, Zap, Upload, ImageOff, ShieldCheck, ArrowRight, Users, Clock } from 'lucide-react'
@@ -95,7 +96,10 @@ export default function LayoutSplit({ cfg }: Props) {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
+              <div className="flex flex-wrap items-center gap-3">
               <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />
+                <TelegramButton size="lg" />
+              </div>
               <span className="text-xs text-gray-600 flex items-center gap-1.5">
                 <ShieldCheck size={12} style={{ color: cfg.accentHex }} />
                 Free — no credit card needed
@@ -261,7 +265,10 @@ export default function LayoutSplit({ cfg }: Props) {
             <p className="text-gray-500 text-sm mb-8 max-w-sm mx-auto leading-relaxed">
               No account. No credit card. Results in under 3 seconds.
             </p>
+            <div className="flex flex-wrap items-center gap-3">
             <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />
+              <TelegramButton size="lg" />
+            </div>
           </div>
         </div>
       </section>

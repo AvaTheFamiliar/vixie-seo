@@ -5,6 +5,7 @@
  */
 import type { DomainConfig } from '@/config/domains'
 import CTAButton from '@/components/CTAButton'
+import TelegramButton from '@/components/TelegramButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import { Sparkles, Shield, Users, Timer, CheckCircle2, Database, Award } from 'lucide-react'
@@ -75,7 +76,10 @@ export default function LayoutEditorial({ cfg }: Props) {
 
           {/* CTA block */}
           <div className="flex flex-col gap-3 shrink-0">
+            <div className="flex flex-wrap items-center gap-3">
             <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />
+              <TelegramButton size="lg" />
+            </div>
             <p className="text-xs text-gray-600 text-center">Free · Private · No sign-up</p>
             {/* Inline trust */}
             <div className="flex flex-col gap-1.5 mt-1">
@@ -177,7 +181,10 @@ export default function LayoutEditorial({ cfg }: Props) {
           ))}
         </div>
         <div className="text-center mt-12">
+          <div className="flex flex-wrap items-center gap-3">
           <CTAButton href={cfg.ctaUrl} label="Undress a photo free" hex={cfg.primaryHex} size="lg" />
+            <TelegramButton size="lg" />
+          </div>
         </div>
       </section>
 
@@ -235,7 +242,10 @@ export default function LayoutEditorial({ cfg }: Props) {
               5 free credits every day — no credit card, no account, no risk.
             </p>
           </div>
+          <div className="flex flex-wrap items-center gap-3">
           <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />
+            <TelegramButton size="lg" />
+          </div>
         </div>
       </section>
 

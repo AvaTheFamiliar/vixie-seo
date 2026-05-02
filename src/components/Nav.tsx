@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { DomainConfig } from '@/config/domains'
+import TelegramButton from '@/components/TelegramButton'
 
 const NAV_SLUGS = ['how-it-works', 'examples', 'compare', 'faq']
 
@@ -30,15 +31,18 @@ export default function Nav({ cfg }: { cfg: DomainConfig }) {
           ))}
         </div>
 
-        <a
-          href={cfg.ctaUrl}
-          className="px-4 py-2 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-90 flex-shrink-0"
-          style={{ background: cfg.primaryHex }}
-          target="_blank"
-          rel="noopener"
-        >
-          {cfg.ctaText}
-        </a>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <a
+            href={cfg.ctaUrl}
+            className="px-4 py-2 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-90"
+            style={{ background: cfg.primaryHex }}
+            target="_blank"
+            rel="noopener"
+          >
+            {cfg.ctaText}
+          </a>
+          <TelegramButton size="sm" />
+        </div>
       </div>
     </nav>
   )

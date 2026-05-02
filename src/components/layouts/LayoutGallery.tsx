@@ -6,6 +6,7 @@
 import Image from 'next/image'
 import type { DomainConfig } from '@/config/domains'
 import CTAButton from '@/components/CTAButton'
+import TelegramButton from '@/components/TelegramButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import { Timer, Zap, ImageOff, RefreshCw, Lock, Server, Share2 } from 'lucide-react'
@@ -60,7 +61,10 @@ export default function LayoutGallery({ cfg }: Props) {
           </div>
 
           <div className="flex flex-col items-start md:items-end gap-3">
+            <div className="flex flex-wrap items-center gap-3">
             <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="md" />
+              <TelegramButton size="md" />
+            </div>
             <p className="text-[10px] text-gray-600 font-mono">
               {STATS.map((s, i) => (
                 <span key={s.label}>
@@ -140,7 +144,10 @@ export default function LayoutGallery({ cfg }: Props) {
       {/* ── CTA BELOW GALLERY ───────────────────────────────────────── */}
       <section className="px-4 md:px-8 py-10">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="flex flex-wrap items-center gap-3">
           <CTAButton href={cfg.ctaUrl} label="Generate yours — free" hex={cfg.primaryHex} size="lg" />
+            <TelegramButton size="lg" />
+          </div>
           <p className="text-xs text-gray-600 mt-3">No sign-up · No watermarks · Deleted in 60s</p>
         </div>
       </section>

@@ -5,6 +5,7 @@
  */
 import type { DomainConfig } from '@/config/domains'
 import CTAButton from '@/components/CTAButton'
+import TelegramButton from '@/components/TelegramButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import { Shield, CreditCard, Users, Smartphone, Star, Database, CheckCircle2, Lock, Globe, Send } from 'lucide-react'
@@ -75,12 +76,15 @@ export default function LayoutCentered({ cfg }: Props) {
           </p>
 
           {/* Soft CTA */}
-          <CTAButton
-            href={cfg.ctaUrl}
-            label="Try it free — no account needed"
-            hex={cfg.primaryHex}
-            size="lg"
-          />
+          <div className="flex flex-wrap items-center gap-3">
+            <CTAButton
+              href={cfg.ctaUrl}
+              label="Try it free — no account needed"
+              hex={cfg.primaryHex}
+              size="lg"
+            />
+            <TelegramButton size="lg" />
+          </div>
 
           {/* Privacy stats with visual emphasis */}
           <div className="flex justify-center flex-wrap gap-6 mt-12">
@@ -252,12 +256,15 @@ export default function LayoutCentered({ cfg }: Props) {
             5 free results every day. No subscription, no credit card, no commitment.
             Your photos stay private — always.
           </p>
-          <CTAButton
-            href={cfg.ctaUrl}
-            label="Try it free — no account needed"
-            hex={cfg.primaryHex}
-            size="lg"
-          />
+          <div className="flex flex-wrap items-center gap-3">
+            <CTAButton
+              href={cfg.ctaUrl}
+              label="Try it free — no account needed"
+              hex={cfg.primaryHex}
+              size="lg"
+            />
+            <TelegramButton size="lg" />
+          </div>
         </div>
       </section>
 
