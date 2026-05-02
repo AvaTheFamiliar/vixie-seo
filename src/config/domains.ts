@@ -63,6 +63,7 @@ const nudifyIm: DomainConfig = {
     { icon: '🆓', title: 'Free Daily Credits', desc: 'Get 5 free nudifications every day. Start instantly, upgrade when you want.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is discreet — your privacy extends to checkout.' },
     { icon: '✨', title: 'Photorealistic AI', desc: 'Cutting-edge AI models trained on millions of images for lifelike results.' },
+    { icon: '📱', title: 'Also on Telegram', desc: 'Use Vixie on Telegram with @VixieArtBot. Pay with Stars — no card needed. Try at t.me/VixieArtBot' },
   ],
   subpages: [
     {
@@ -495,6 +496,8 @@ const nudifyMy: DomainConfig = {
     { icon: '🎨', title: 'Choose Your Style', desc: '19 styles — from subtle to explicit. You\'re in control.' },
     { icon: '💎', title: 'Free Daily Credits', desc: '5 free nudifications every day. Start now, upgrade when you\'re ready.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Card or crypto accepted. Discreet billing — nothing explicit on your statement.' },
+  
+    { icon: '📱', title: 'Also on Telegram', desc: 'Use Vixie on Telegram with @VixieArtBot. Pay with Stars — no card needed. Try at t.me/VixieArtBot' },
   ],
   subpages: [
     {
@@ -930,6 +933,8 @@ const nudifyPics: DomainConfig = {
     { icon: '🎭', title: '19 Styles', desc: 'From tasteful nude to explicit NSFW — choose your level.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is generic — your purchase stays private.' },
     { icon: '💎', title: 'Free Daily Credits', desc: '5 free nude pic generations every day. Start immediately.' },
+  
+    { icon: '📱', title: 'Also on Telegram', desc: 'Use Vixie on Telegram with @VixieArtBot. Pay with Stars — no card needed. Try at t.me/VixieArtBot' },
   ],
   subpages: [
     {
@@ -1361,6 +1366,8 @@ const nudieApp: DomainConfig = {
     { icon: '🎨', title: '19 Nude Styles', desc: 'From lingerie to full nude to NSFW — choose the exact look you want.' },
     { icon: '💎', title: 'Free Daily Credits', desc: '5 free nude generations every day. Start now, buy more when you need them.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Card or crypto accepted. Discreet billing — nothing explicit on your statement.' },
+  
+    { icon: '📱', title: 'Also on Telegram', desc: 'Use Vixie on Telegram with @VixieArtBot. Pay with Stars — no card needed. Try at t.me/VixieArtBot' },
   ],
   subpages: [
     {
@@ -1800,6 +1807,8 @@ const undressCat: DomainConfig = {
     { icon: '🎨', title: '19 Undress Styles', desc: 'From tasteful to explicit — full control over the output.' },
     { icon: '🆓', title: 'Free Daily Credits', desc: '5 free undresses every day. Start immediately, upgrade when you want.' },
     { icon: '💳', title: 'Discrete Payments', desc: 'Pay by card or crypto. Billing is discreet — your purchase stays private.' },
+  
+    { icon: '📱', title: 'Also on Telegram', desc: 'Use Vixie on Telegram with @VixieArtBot. Pay with Stars — no card needed. Try at t.me/VixieArtBot' },
   ],
   subpages: [
     {
