@@ -7,7 +7,7 @@ import type { DomainConfig } from '@/config/domains'
 import CTAButton from '@/components/CTAButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
-import { Upload, Zap, CreditCard, RefreshCw, Lock, Eye, Activity, CheckCircle, ArrowUpRight } from 'lucide-react'
+import { Upload, Zap, CreditCard, RefreshCw, Lock, Eye, Activity, CheckCircle, ArrowUpRight, Send } from 'lucide-react'
 
 interface Props { cfg: DomainConfig }
 
@@ -16,6 +16,7 @@ const VALUE_PROPS = [
   { Icon: Zap,        title: 'Results in under 3s',      desc: 'AI-powered inference on A100 80GB GPUs.' },
   { Icon: CreditCard, title: 'Free to try',              desc: 'No credit card required. 5 free credits/day.' },
   { Icon: RefreshCw,  title: 'Retrained weekly',         desc: 'State-of-the-art AI, always improving.' },
+  { Icon: Send,        title: 'Also on Telegram',          desc: 'Use @VixieArtBot directly in Telegram. Pay with Stars — no card needed.' },
 ]
 
 const STATUS_ITEMS = [

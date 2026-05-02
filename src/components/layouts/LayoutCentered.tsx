@@ -7,7 +7,7 @@ import type { DomainConfig } from '@/config/domains'
 import CTAButton from '@/components/CTAButton'
 import FAQAccordion from '@/components/FAQAccordion'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
-import { Shield, CreditCard, Users, Smartphone, Star, Database, CheckCircle2, Lock, Globe } from 'lucide-react'
+import { Shield, CreditCard, Users, Smartphone, Star, Database, CheckCircle2, Lock, Globe, Send } from 'lucide-react'
 
 interface Props { cfg: DomainConfig }
 
@@ -16,6 +16,7 @@ const VALUE_PROPS = [
   { Icon: CreditCard,  title: 'Free to Try',            desc: 'No credit card required, ever.' },
   { Icon: Users,       title: 'Any Body Type',          desc: 'Our AI adapts to every shape and size.' },
   { Icon: Smartphone,  title: 'Mobile Friendly',        desc: 'No app to install — works in any browser.' },
+  { Icon: Send,        title: 'Also on Telegram',        desc: 'Use @VixieArtBot in Telegram. Pay with Stars — no card needed.' },
 ]
 
 const STATS = [
