@@ -20,7 +20,7 @@ interface Props { cfg: DomainConfig }
 
 const VALUE_PROPS = [
   { Icon: Zap,        text: 'Results in under 3 seconds' },
-  { Icon: Upload,     text: 'No account needed — upload and go' },
+  { Icon: Upload,     text: 'sign up for free daily credits — upload and go' },
   { Icon: ImageOff,   text: 'No watermarks on results' },
   { Icon: ShieldCheck, text: 'Realistic, not plastic filters' },
 ]
@@ -41,7 +41,7 @@ const TRUST = [
 const TICKER = [
   'Undress any photo. Instantly.',
   '2M+ results generated.',
-  'No account needed.',
+  'sign up for free daily credits.',
   'Zero data retained.',
   'Under 3 seconds.',
 ]
@@ -91,7 +91,7 @@ export default function LayoutSplit({ cfg }: Props) {
             </h1>
 
             <p className="text-gray-400 text-base md:text-lg max-w-sm mb-10 leading-relaxed">
-              Professional-grade AI. No watermarks. No account. Just results.
+              Professional-grade AI. No watermarks. Just results.
             </p>
 
             {/* CTA */}
@@ -232,7 +232,7 @@ export default function LayoutSplit({ cfg }: Props) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { Icon: Upload, n: '01', title: 'Upload', desc: 'Drop any photo. No signup, no waiting.' },
+              { Icon: Upload, n: '01', title: 'Upload', desc: 'Drop any photo. sign up for free daily credits, no waiting.' },
               { Icon: Zap,    n: '02', title: 'Process', desc: 'Our AI runs in under 3 seconds.' },
               { Icon: ImageOff, n: '03', title: 'Download', desc: 'Full-res result. No watermark. Auto-deleted.' },
             ].map(({ Icon, n, title, desc }) => (
@@ -263,7 +263,7 @@ export default function LayoutSplit({ cfg }: Props) {
               Try it free. Right now.
             </h2>
             <p className="text-gray-500 text-sm mb-8 max-w-sm mx-auto leading-relaxed">
-              No account. No credit card. Results in under 3 seconds.
+              sign up for free daily credits. No credit card. Results in under 3 seconds.
             </p>
             <div className="flex flex-wrap items-center gap-3">
             <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />

@@ -27,7 +27,7 @@ export default function Footer({ cfg }: { cfg: DomainConfig }) {
               {cfg.brandName}
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed mt-3 max-w-[220px]">
-              {cfg.tagline}. AI-powered nudify tool — results in under 3 seconds, no account needed.
+              {cfg.tagline}. AI-powered nudify tool — results in under 3 seconds. Sign up for free daily credits.
             </p>
             <div className="flex flex-wrap gap-3 mt-5">
               {(['2M+ processed', 'Free', 'Private', '3s avg'].map((badge) => (

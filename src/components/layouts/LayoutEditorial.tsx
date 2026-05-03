@@ -80,7 +80,7 @@ export default function LayoutEditorial({ cfg }: Props) {
             <CTAButton href={cfg.ctaUrl} label={cfg.ctaText} hex={cfg.primaryHex} size="lg" />
               <TelegramButton size="lg" />
             </div>
-            <p className="text-xs text-gray-600 text-center">Free · Private · No sign-up</p>
+            <p className="text-xs text-gray-600 text-center">Free · Private · sign up for free daily credits</p>
             {/* Inline trust */}
             <div className="flex flex-col gap-1.5 mt-1">
               {TRUST.map(({ Icon, text }) => (
@@ -239,7 +239,7 @@ export default function LayoutEditorial({ cfg }: Props) {
           <div>
             <h2 className="text-3xl font-black mb-1.5">Ready to try?</h2>
             <p className="text-gray-500 text-sm">
-              5 free credits every day — no credit card, no account, no risk.
+              5 free credits every day — no risk.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">

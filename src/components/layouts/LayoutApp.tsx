@@ -13,7 +13,7 @@ import { Upload, Zap, CreditCard, RefreshCw, Lock, Eye, Activity, CheckCircle, A
 interface Props { cfg: DomainConfig }
 
 const VALUE_PROPS = [
-  { Icon: Upload,     title: 'No account needed',       desc: 'Upload and go — no sign-up, no friction.' },
+  { Icon: Upload,     title: 'sign up for free daily credits',       desc: 'Upload and go — no friction.' },
   { Icon: Zap,        title: 'Results in under 3s',      desc: 'AI-powered inference on A100 80GB GPUs.' },
   { Icon: CreditCard, title: 'Free to try',              desc: 'No credit card required. 5 free credits/day.' },
   { Icon: RefreshCw,  title: 'Retrained weekly',         desc: 'State-of-the-art AI, always improving.' },
@@ -196,7 +196,7 @@ export default function LayoutApp({ cfg }: Props) {
               <TelegramButton size="lg" />
             </div>
             <p className="text-xs text-gray-600 mt-3 font-mono">
-              free · no account · auto-deleted
+              free · sign up · auto-deleted
             </p>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function LayoutApp({ cfg }: Props) {
             <CTAButton href={cfg.ctaUrl} label="Try Free" hex={cfg.primaryHex} size="lg" />
               <TelegramButton size="lg" />
             </div>
-            <p className="text-[10px] text-gray-600 font-mono">no account required</p>
+            <p className="text-[10px] text-gray-600 font-mono">sign up for free daily credits</p>
           </div>
         </div>
       </section>

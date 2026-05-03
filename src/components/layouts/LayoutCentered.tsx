@@ -57,7 +57,7 @@ export default function LayoutCentered({ cfg }: Props) {
             }}
           >
             <Shield size={12} />
-            Privacy-first · Free · No sign-up
+            Privacy-first · Free · Sign up free
           </span>
 
           {/* H8: "AI that respects your privacy" */}
@@ -79,7 +79,7 @@ export default function LayoutCentered({ cfg }: Props) {
           <div className="flex flex-wrap items-center gap-3">
             <CTAButton
               href={cfg.ctaUrl}
-              label="Try it free — no account needed"
+              label="Sign Up for Free Daily Credits"
               hex={cfg.primaryHex}
               size="lg"
             />
@@ -185,7 +185,7 @@ export default function LayoutCentered({ cfg }: Props) {
           <h2 className="text-2xl font-black mb-10">Three steps. Ten seconds. Done.</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { n: '01', t: 'Upload',     d: 'Any JPG, PNG or WebP. No sign-up.' },
+              { n: '01', t: 'Upload',     d: 'Any JPG, PNG or WebP.' },
               { n: '02', t: 'Process',    d: 'AI runs in under 3 seconds on secure servers.' },
               { n: '03', t: 'Your result',d: 'Auto-deleted after 60s. Truly private.' },
             ].map(step => (
@@ -259,7 +259,7 @@ export default function LayoutCentered({ cfg }: Props) {
           <div className="flex flex-wrap items-center gap-3">
             <CTAButton
               href={cfg.ctaUrl}
-              label="Try it free — no account needed"
+              label="Sign Up for Free Daily Credits"
               hex={cfg.primaryHex}
               size="lg"
             />

@@ -148,7 +148,7 @@ export default function LayoutGallery({ cfg }: Props) {
           <CTAButton href={cfg.ctaUrl} label="Generate yours — free" hex={cfg.primaryHex} size="lg" />
             <TelegramButton size="lg" />
           </div>
-          <p className="text-xs text-gray-600 mt-3">No sign-up · No watermarks · Deleted in 60s</p>
+          <p className="text-xs text-gray-600 mt-3">sign up for free daily credits · No watermarks · Deleted in 60s</p>
         </div>
       </section>
 
@@ -194,7 +194,7 @@ export default function LayoutGallery({ cfg }: Props) {
           <h2 className="text-xl font-black mb-8">How to generate nude AI pics</h2>
           <div className="space-y-3">
             {[
-              { n: '01', t: 'Upload',      d: 'Any JPG, PNG or WebP photo. No account needed.' },
+              { n: '01', t: 'Upload',      d: 'Any JPG, PNG or WebP photo.' },
               { n: '02', t: 'AI processes', d: 'Results in under 3 seconds on dedicated servers.' },
               { n: '03', t: 'Download',    d: 'No watermarks. Photo auto-deleted in 60 seconds.' },
             ].map(step => (
